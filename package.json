@@ -1,0 +1,21 @@
+{
+  "name": "lebonmarche",
+  "author": "Guenfissi Nourdine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install && cd client && npm install",
+    "client": "npm start --prefix client",
+    "server": "node server",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "express": "latest",
+    "leboncoin-api": "0.0.40",
+    "nominatim-geocoder": "^0.1.4"
+  },
+  "license": "ISC"
+}
